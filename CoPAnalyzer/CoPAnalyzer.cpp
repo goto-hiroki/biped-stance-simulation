@@ -153,13 +153,13 @@ double getSurroundingArea(vector<double> xdata, vector<double> ydata)
 int main()
 {
 	Storage sto("jiang_CoPpositon_pos.sto");
-    
+
     const double DT = 1.0/20;
-    //sto.resample(DT, 3);
+    //sto.resample(DT, 3); // spline interpolation
     sto.resampleLinear(DT); // set the sampling rate
 
     sto.crop(2.0, 4.0);
-    
+
 	const int timeSize = sto.getSize();
 	cout << "timeSize: " << timeSize << endl;
 	const double timeRange = sto.getLastTime() - sto.getFirstTime();
@@ -208,7 +208,7 @@ int main()
 	const double MLSD = getStandardDeviation(CoPzVector);
 	cout << "AP SD: " << APSD << " m" << endl;
 	cout << "ML SD: " << MLSD << " m" << endl;
-    
+
     const double AnteriorVel = getAverageOneWayVelocity(true, CoPxVector, DT);
     const double PosteriorVel = getAverageOneWayVelocity(false, CoPxVector, DT);
     cout << "Average Anterior Velocity: " << AnteriorVel << " m/s" << endl;

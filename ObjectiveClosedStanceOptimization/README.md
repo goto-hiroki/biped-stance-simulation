@@ -25,7 +25,6 @@ by CMA-ES, where
 
 This method follows [1].
 
-
 ## References
 1. [Jiang P, Chiba R, Takakusaki K, Ota J (2016) Generation of the Human Biped Stance by a Neural Controller Able to Compensate Neurological Time Delay. PLoS ONE 11(9): e0163212.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0163212)
-2. [Kaminishi K, Jiang P, Chiba R, Takakusaki K, Ota J (2019) Postural control of a musculoskeletal model against multidirectional support surface translations. PLoS ONE 14(3): e0212613.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0212613#references)
+2. [Kaminishi K, Jiang P, Chiba R, Takakusaki K, Ota J (2019) Postural control of a musculoskeletal model against multidirectional support surface translations. PLoS ONE 14(3): e0212613.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0212613)
